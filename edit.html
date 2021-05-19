@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.box{
+	text-align: center;
+    height: 200px;
+    width: 400px;
+    background: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+.btn {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}	
+.btn:hover {opacity: 1}{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border:none;
+	border-radius: 20px;
+	cursor: auto;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+h1 {
+			text-align: center;
+			color: #006600;
+			font-size: xx-large;
+			font-family: 'Gill Sans', 'Gill Sans MT',
+			' Calibri', 'Trebuchet MS', 'sans-serif';
+		}
+</style>
+</head>
+<body>
+<h1 class="b" text-color="white">EMPLOYEE MANAGEMENT SYSTEM</h1>
+<a class="btn" style="float: left;" href="view.php">VIEW DATA</a>
+<a class="btn" style="float: left;" href="add.html">ADD DATA</a>
+<a class="btn" style="float: left;" href="edit.php">UPDATE DATA</a>
+<a class="btn" style="float: left;" href="#">DELETE DATA</a><br>
+<div  class="box">
+	<form name="register" action="register.php" onsubmit="return validateForm()" method="post">
+		<div class="box">
+		<table>
+		 <tr>	
+			<label for="username"><td><b>User Name</b></td></label>
+			<td><input type="text" name="username" onsubmit="return validateForm()"></td>
+		 </tr>
+		 <tr>
+			<label for="salary"><td><b>Salary</b></td></label>
+			<td><input type="salary" name="salary"></td>
+		 </tr>
+			<label for="date"><td><b>DOB</b></td></label>
+			<td><input type="date" name="date"></td>
+		 <tr>
+			<label for="state"><td><b>State</b></td></label>
+			<td><input type="text" name="state"></td>
+		 </tr>
+		 <tr>
+			<label for="Zip"><td><b>Zip</b></td></label>
+			<td><input type="Zip" name="Zip"></td>
+		 <tr>
+			<td><input class="btn" type="submit" name="create" value="submit"></td><br>
+		 </tr>  
+		 </table>
+		</div>
+	</form>
+</div>
+</body>
+</html>

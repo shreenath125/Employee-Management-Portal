@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-image: url('images/img1.jpg');
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.box{
+	color: white;
+	text-align: left;
+    height: 200px;
+    width: 400px;
+    background: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+
+}
+.btn {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}	
+.btn:hover {opacity: 1}
+h1 {
+			text-align: center;
+			color: #006600;
+			font-size: xx-large;
+			font-family: 'Gill Sans', 'Gill Sans MT',
+			' Calibri', 'Trebuchet MS', 'sans-serif';
+		}
+</style>
+</head>
+<body>
+<h1 class="b" text-color="white">EMPLOYEE MANAGEMENT SYSTEM</h1>
+<a class="btn" style="float: right;" href="home.html">HOME</a>
+<a class="btn" style="float: left;" href="view.php">VIEW DATA</a>
+<a class="btn" style="float: left;" href="add.html">ADD DATA</a>
+<a class="btn" style="float: left;" href="edit.php">UPDATE DATA</a>
+<a class="btn" style="float: left;" href="DELETE.PHP">DELETE DATA</a><br>
+<br>
+<br>
+<div class="box">
+	<form name="ADD" action="add.php" method="POST">
+		<table>
+		</tr>
+			<label for="EmpID"><td><b>Employee ID</b></td></label>
+			<td><input type="num" name="EmpID"></td>
+		 <tr>
+		 <tr>	
+			<label for="Employee_name"><td><b>Employee Name</b></td>
+			<td><input type="text" name="Employee_name"></td>
+		 </tr>
+		 </tr>
+			<label for="DeptID"><td><b>Department ID</b></td></label>
+			<td><input type="num" name="DeptID"></td>
+		 <tr>
+		 <tr>
+			<label for="salary"><td><b>Salary</b></td></label>
+			<td><input  type="num" name="salary"></td>
+		</tr>
+		<tr>
+			<label for="state"><td><b>State</b></td></label>
+			<td><input type="text" name="state"></td>
+		 </tr>
+		 <tr>	
+			<label for="MaritalDesc"><td><b>Marital Description</b></td>
+			<td><input type="text" name="MaritalDesc"></td>
+		 </tr>
+		 <tr>
+			<label for="Position"><td><b>Position</b></td></label>
+			<td><input type="text" name="Position"></td>
+		 </tr>
+		 <tr>
+			<label for="Zip"><td><b>Zip</b></td></label>
+			<td><input type="text" name="Zip"></td>
+		</tr>
+			<label for="Absences"><td><b>Absences</b></td></label>
+			<td><input type="num" name="Absences"></td>
+		 <tr>
+			<label for="Department"><td><b>Department</b></td></label>
+			<td><input type="text" name="Department"></td>
+		 </tr>
+		 <tr>
+			<label for="ManagerName"><td><b>Manager Name</b></td></label>
+			<td><input type="text" name="ManagerName"></td>
+		 </tr>
+		 <tr>
+		 	<td></td>
+			<td><input class="btn" type="submit" name="create" value="ADD"></td><br>
+		 </tr> 
+		 	</table>
+	</form>
+</div>
+</body>
+</html>
