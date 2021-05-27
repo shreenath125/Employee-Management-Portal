@@ -1,0 +1,67 @@
+html,body{
+  font-family: times-new-roman;
+  margin: 0;
+  padding: 0; 
+  background: #dedede;
+  background-image: url('img1.jpg');
+}
+h2{
+  color: chartreuse;
+  text-align: center;
+  font-size: 300%;
+  font-family: times-new-roman;
+}
+nav{
+  background: chartreuse;
+  overflow: hidden; 
+}
+nav ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+nav .mm>li{
+  display: inline-block;
+}
+nav a{
+  font-weight: bold;
+  margin: 0;
+  padding: 12px 15px 12px 15px;
+  color: black;
+  background: chartreuse;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover{
+  background: cyan;
+}
+nav li:hover>a{
+  background: cyan;
+  cursor: pointer;
+}
+nav .sm,nav .ssm{
+  position: absolute;
+  display: none;
+}
+nav .sm li{
+  position: relative;
+}
+nav .ssm{
+  top:0;
+  right:0;
+  transform: translate(100%,0); 
+}
+nav .mm>li:hover .sm,nav .sm>li:hover>.ssm{
+  display: block;
+}
+.sm li:hover>.ssm{
+  display: block;
+}
+p{
+  color: chartreuse;
+  text-align: center;
+  font-size: 250%;
+  margin-top: 330px;
+  font-family: times-new-roman;
+}
